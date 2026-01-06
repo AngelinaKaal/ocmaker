@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OC NoteTaker</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="Index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kavivanar&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="header">
+    <h1>OC NoteTaker</h1>
+  </div>
+  <div id="SignUp" class="container float-center col-sm-8">
+    <h2 class="py-4 text-center">Lets collect some data!</h2>
+    <form>
+      <div id="form">
+        <div id="world_container" class="pb-4 px-4">
+          <label for="world_id"> what world/universe do they reside in?</label><br>
+          <select class="form-control" id="world_id" name="world_id">
+            <option value="">Select a world...</option>
+          </select>
+        </div>
+        <div id="fname_container" class="pb-4 px-4">
+          <label for="fname">Name:</label><br>
+          <input type="text" placeholder="What will they be named?" class="form-control" id="fname" name="fname">
+        </div>
+        <div id="fpronouns_container" class="pb-4 px-4">
+          <label for="fpronouns">Pronouns:</label><br>
+          <input type="text" placeholder="e.g. He/Him, They/Them" class="form-control" id="fpronouns" name="fpronouns">
+        </div>
+        <div id="fage_container" class="pb-4 px-4">
+          <label for="fage">Age:</label><br>
+          <input type="number" placeholder="How old are they?" class="form-control" id="fage" name="fage">
+        </div>
+        <div id="fdob_container" class="pb-4 px-4">
+          <label for="fdob">Date of Birth:</label><br>
+          <input type="date" class="form-control" id="fdob" name="fdob">
+        </div>
+        <div id="frace_container" class="pb-4 px-4">
+          <label for="frace"> what race are they within their universe?</label><br>
+          <input type="text" placeholder="e.g. Human, Elf, Android" class="form-control" id="frace" name="frace">
+        </div>
+        <div id="fgender_container" class="pb-4 px-4">
+          <label for="fgender">Gender:</label><br>
+          <input type="radio" id="Male" name="Gender" value="Male">
+          <label for="Male">Male</label><br>
+          <input type="radio" id="Female" name="Gender" value="Female">
+          <label for="Female">Female</label><br>
+          <input type="radio" id="nonbinary" name="Gender" value="Non-Binary">
+          <label for="nonbinary">Non-Binary</label><br>
+          <input type="radio" id="Other" name="Gender" value="Other">
+          <label for="Other">Other:</label>
+          <input type="text" id="other_gender" placeholder="Specify">
+        </div>
+      </div>
+      <div id="fabilities-container" class="pb-4 px-4">
+        <label for="fabilities">Abilities:</label><br>
+        <textarea id="fabilities" placeholder="What special powers or skills do they have?" class="form-control" name="fabilities" rows="5"></textarea>
+      </div>
+      <div id="fappearance_container" class="pb-4 px-4">
+        <label for="fappearance">Appearance:</label><br>
+        <textarea placeholder="What do they look like? e.g. hair color, eye color, height" class="form-control" id="fappearance" name="fappearance" rows="3"></textarea>
+      </div>
+      <h3 class="text-center">Lore Details</h3>
+      <div id="fdescription_container" class="pb-4 px-4">
+        <label for="fdescription">Description:</label><br>
+        <textarea placeholder="Describe their lore in more detail" class="form-control" id="fdescription" name="fdescription" rows="5"></textarea>
+      </div>
+      <div id="fgoal_container" class="pb-4 px-4">
+        <label for="fgoal">Goal:</label><br>
+        <input type="text" placeholder="What is their goal in the story?" class="form-control" id="fgoal" name="fgoal">
+      </div>
+      <div id="fflaws_container" class="pb-4 px-4">
+        <label for="fflaws">Flaws:</label><br>
+        <input type="text" placeholder="What are their character flaws?" class="form-control" id="fflaws" name="fflaws">
+      </div>
+      <div id="frole_container" class="pb-4 px-4">
+        <label for="frole">Role:</label><br>
+        <input type="text" placeholder="What is their role in society? e.g. hero, villain, sidekick" class="form-control" id="frole" name="frole">
+      </div>
+      <div class="pb-4 px-4">
+        <label for="strength_id">Main Strength:</label>
+        <select class="form-control" id="strength_id" name="strength_id">
+          <option value="">Loading strengths...</option>
+        </select>
+      </div>
+      <div class="pb-4 px-4">
+        <label for="weakness_id">Main Weakness:</label>
+        <select class="form-control" id="weakness_id" name="weakness_id">
+          <option value="">Loading weaknesses...</option>
+        </select>
+      </div>
+      <div class="pb-4 px-4">
+        <label for="fmoral_alignment">Moral Alignment:</label>
+        <select class="form-control" id="fmoral_alignment" name="fmoral_alignment">
+          <option value="">Select alignment...</option>
+          <option value="Lawful Good">Lawful Good</option>
+          <option value="Neutral Good">Neutral Good</option>
+          <option value="Chaotic Good">Chaotic Good</option>
+          <option value="Lawful Neutral">Lawful Neutral</option>
+          <option value="True Neutral">True Neutral</option>
+          <option value="Chaotic Neutral">Chaotic Neutral</option>
+          <option value="Lawful Evil">Lawful Evil</option>
+          <option value="Neutral Evil">Neutral Evil</option>
+          <option value="Chaotic Evil">Chaotic Evil</option>
+        </select>
+      </div>
+      <div id="fdeath_container" class="pb-4 px-4">
+        <label for="fdeath">Death (Optional):</label><br>
+        <input type="text" placeholder="How do they die? (Leave blank if alive)" class="form-control" id="fdeath" name="fdeath">
+      </div>
+      <div class="pb-4 px-4">
+        <h3 class="text-center">Relationships</h3>
+        <div class="d-flex gap-2 mb-2">
+          <select id="rel_char_select" class="form-control">
+            <option value="">Select a character...</option>
+          </select>
+          <button type="button" id="add_rel_btn" class="btn btn-secondary">Add</button>
+        </div>
+        <div id="relationship_list" class="border rounded p-3 bg-light" style="min-height: 50px;">
+          </div>
+      </div>
+      <div class="text-center py-4">
+        <button type="submit" id="signupbutton" class="btn btn-primary btn-lg">Create!</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

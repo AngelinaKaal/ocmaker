@@ -1,0 +1,99 @@
+#header {
+    padding: 2px;
+    padding-top: 3px;
+    background-color: #243030;
+    color: white;
+}
+
+#header h1 {
+    text-align: left;
+    font-family: "Kaushan Script", cursive;
+    padding: 5px;
+    padding-left: 20px;
+}
+
+label {
+    text-align: left;
+}
+
+body {
+    background-color: #758D6F;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #243030; /* Darker green for contrast on buttons */
+    border-color: #243030;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    color: #000000;
+    background-color: #DDF8D6;
+    border-color: #788275;
+}
+
+#SignUp {
+    background-color: #B8DEC7;
+    color: black;
+    border-radius: 33px;
+    padding: 10px;
+    margin-top: 15px;
+    font-family: "Kavivanar", cursive;
+}
+
+/* -------------------------------------------------------{ card styling }--------------------------------------------------------------------------------- */
+.character-card {
+    background-color: #B8DEC7;
+    border: none;
+    border-radius: 20px;
+    font-family: "Kavivanar", cursive;
+    transition: transform 0.2s;
+}
+
+.character-card:hover {
+    transform: scale(1.02);
+}
+
+.character-card h4 {
+    font-family: "Kaushan Script", cursive;
+    color: #243030;
+}
+
+/* -------------------------------------------------------{ relationship rows }---------------------------------------------------------------------------- */
+.rel-row {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 8px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rel-row strong {
+    min-width: 100px;
+}
+
+/* -------------------------------------------------------{ delete buttons }------------------------------------------------------------------------------ */
+.btn-delete {
+    background-color: #ff6b6b;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 2px 8px;
+}
+
+.btn-delete:hover {
+    background-color: #fa5252;
+}
+
+/* -------------------------------------------------------{ fonts }---------------------------------------------------------------------------------------- */
+.kaushan-script-regular {
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+}
+
+.kavivanar-regular {
+    font-family: "Kavivanar", cursive;
+    font-weight: 400;
+}

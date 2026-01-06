@@ -1,0 +1,23 @@
+#header {
+    padding: 2px;
+    padding-top: 3px;
+    background-color: #243030;
+    color: white;
+    h1 {
+        text-align: left;
+        font-family: "Kaushan Script", cursive;
+        padding: 5px;
+        padding-left: 20px;;
+    }
+}
+label {
+    text-align: left;
+}
+body {
+    background-color: #758D6F;
+}
+
+#list {
+    border-radius: 33px;
+    background-color: #B8DEC7;
+}
